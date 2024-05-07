@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Link } from "react";
 // import * as icon from "bootstrap-icons";
 
+import about from "../../about/page";
 
 function Header() {
   const navItems = [
@@ -14,7 +15,7 @@ function Header() {
     },
     {
       title: "Services",
-      to: "#",
+      to: "/services",
     },
     {
       title: "Projects",
@@ -46,7 +47,10 @@ function Header() {
             <ul className="nav">
               {navItems.map((item, index) => {
                 return (
-                  <li className=" nav-item text-1xl fw-bold navLinks " key={index}>
+                  <li
+                    className=" nav-item text-1xl fw-bold navLinks "
+                    key={index}
+                  >
                     <a href={item.to} className="nav-link ">
                       {item.title}
                     </a>{" "}
