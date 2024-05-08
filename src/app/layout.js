@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Header from "./components/header/page";
+import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,7 +18,12 @@ export default function RootLayout({ children }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         ></link>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="headerFix">
+          <Header />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

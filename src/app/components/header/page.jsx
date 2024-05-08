@@ -1,13 +1,12 @@
-import React, { Link } from "react";
+import React from "react";
+import Link from "next/link";
 // import * as icon from "bootstrap-icons";
-
-import about from "../../about/page";
 
 function Header() {
   const navItems = [
     {
       title: "Home",
-      to: "#",
+      to: "/",
     },
     {
       title: "About",
@@ -51,9 +50,9 @@ function Header() {
                     className=" nav-item text-1xl fw-bold navLinks "
                     key={index}
                   >
-                    <a href={item.to} className="nav-link ">
+                    <Link href={item.to} className="nav-link ">
                       {item.title}
-                    </a>{" "}
+                    </Link>{" "}
                   </li>
                 );
               })}
@@ -68,6 +67,7 @@ function Header() {
             {/* <div className="d-block">
               <i className="bi bi-search text-xl"></i>
             </div> */}
+            
           </div>
         </div>
       </div>

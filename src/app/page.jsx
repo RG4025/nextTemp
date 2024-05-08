@@ -6,16 +6,16 @@ import Intro from "./components/intro/page";
 import Footer from "./components/footer/page";
 import News from "./components/news/page";
 
-import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+
 // import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 
 export default function Home() {
   return (
     <>
       <section className="">
-        <div className="headerFix">
+        {/* <div className="headerFix">
           <Header />
-        </div>
+        </div> */}
         <div className="headerMain position-relative">
           <div className="container">
             <div className="container headerText col-lg-5 align-left ms-0 ms-md-5">
