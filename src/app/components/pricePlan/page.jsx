@@ -47,11 +47,11 @@ function PricePlan() {
                       </div>
                       <div className="p-3 container d-flex flex-column gap-2 justify-content-center align-items-center bg-[#F7F7F7]">
                         <ul>
-                            <li><i class="bi bi-check2"></i> Unlimited Entrance</li>
-                            <li><i class="bi bi-check2"></i> Comfirtable Seat</li>
-                            <li><i class="bi bi-check2"></i> Paid Certificate</li>
-                            <li><i class="bi bi-x"></i> Day One Workshop</li>
-                            <li><i class="bi bi-x"></i> One Certificate</li>
+                            <li><i className="bi bi-check2"></i> Unlimited Entrance</li>
+                            <li><i className="bi bi-check2"></i> Comfirtable Seat</li>
+                            <li><i className="bi bi-check2"></i> Paid Certificate</li>
+                            <li><i className="bi bi-x"></i> Day One Workshop</li>
+                            <li><i className="bi bi-x"></i> One Certificate</li>
                         </ul>
 
                         <a href="#" className=" text-light"><button className="text-uppercare fs-6 border rounded-2 bg-black hover:bg-[#fff] px-3 py-1">Book Now</button></a>

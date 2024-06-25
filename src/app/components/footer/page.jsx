@@ -30,7 +30,7 @@ function Footer() {
                   className="border border-1 border-light w-75 p-2 bg-transparent"
                 />
                 <button className="bg-danger p-2  border border-2 border-danger">
-                  <i class="bi bi-arrow-right"></i>
+                  <i className="bi bi-arrow-right"></i>
                 </button>
               </div>
             </div>
@@ -41,13 +41,13 @@ function Footer() {
               <p className="text-secondary">Let us be social</p>
               <p>
                 <span className="mx-1 px-1">
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </span>
                 <span className="mx-1 px-1">
-                  <i class="bi bi-whatsapp"></i>
+                  <i className="bi bi-whatsapp"></i>
                 </span>
                 <span className="mx-1 px-1">
-                  <i class="bi bi-twitter-x"></i>
+                  <i className="bi bi-twitter-x"></i>
                 </span>
               </p>
             </div>

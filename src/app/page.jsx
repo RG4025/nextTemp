@@ -1,3 +1,4 @@
+"use client";
 import Header from "./components/header/page";
 import Work from "./components/work/page";
 import Offer from "./components/offer/page";
@@ -5,11 +6,31 @@ import PricePlan from "./components/pricePlan/page";
 import Intro from "./components/intro/page";
 import Footer from "./components/footer/page";
 import News from "./components/news/page";
-
-
+// import { socketConnect } from "sockettwo";
+import { useEffect } from "react";
 // import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 
 export default function Home() {
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("Window scrolled!");
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+
+      // return () => {
+      //   window.removeEventListener("scroll", handleScroll);
+      // };
+    }
+  }, []);
+
+  console.log(typeof window);
+  if (typeof window !== "undefined") {
+    console.log(window);
+    console.log("find the window!");
+  }
+
   return (
     <>
       <section className="">

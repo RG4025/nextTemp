@@ -44,27 +44,31 @@ function News() {
 
         <div className="container py-2 py-md-4">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            {newsData.map((data, index) => {
+            {newsData.map((data) => {
               return (
-                <>
-                  <div className="container col" key={index}>
-                    <div className=" newsImage d-flex overflow-hidden bg-[#F7F7F7] p-3 flex-column  ">
-                      <img src={data.image} alt="image" className="img-fluid" />
-                      <p className="d-flex justify-content-between align-items-center py-3">
-                        <small><i class="bi bi-file-earmark-check"></i>{data.file}</small>
-                        <small><i class="bi bi-clock"></i>{data.date}</small>
-                      </p>
-                      <strong className="text-start">{data.title}</strong>
-                      <p>{data.data}</p>
-                      <a
-                        href={data.anchor}
-                        className="text-uppercase text-decoration-none text-dark"
-                      >
-                        Read More
-                      </a>
-                    </div>
+                <div className="container col" key={data.image}>
+                  <div className=" newsImage d-flex overflow-hidden bg-[#F7F7F7] p-3 flex-column  ">
+                    <img src={data.image} alt="image" className="img-fluid" />
+                    <p className="d-flex justify-content-between align-items-center py-3">
+                      <small>
+                        <i className="bi bi-file-earmark-check"></i>
+                        {data.file}
+                      </small>
+                      <small>
+                        <i className="bi bi-clock"></i>
+                        {data.date}
+                      </small>
+                    </p>
+                    <strong className="text-start">{data.title}</strong>
+                    <p>{data.data}</p>
+                    <a
+                      href={data.anchor}
+                      className="text-uppercase text-decoration-none text-dark"
+                    >
+                      Read More
+                    </a>
                   </div>
-                </>
+                </div>
               );
             })}
           </div>
