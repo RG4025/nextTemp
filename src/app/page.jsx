@@ -28,7 +28,7 @@ export default function Home() {
   console.log(typeof window);
   if (typeof window !== "undefined") {
     console.log(window);
-    console.log("find the window!");
+    console.log("found the window!");
   }
 
   return (
